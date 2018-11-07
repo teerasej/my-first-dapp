@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>ChainList by Nextflow</title>
+  <title>ChainList from ChainSkills</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,9 +40,11 @@
       <div class="row panel panel-default">
         <div class="panel-heading clearfix">
           <div class="panel-title">
+            <button class="btn btn-info btn-lg pull-left" data-toggle="collapse" data-target="#events" aria-expanded="false" aria-controls="events">Events</button>
             <button class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#sellArticle">Sell an article</button>
           </div>
         </div>
+        <ul id="events" class="collapse list-group"></ul>
       </div>
 
       <div id="articlesRow" class="row">
@@ -63,6 +64,9 @@
           <strong>Description</strong>: <span class="article-description"></span><br/>
           <strong>Price (ETH)</strong>: <span class="article-price"></span><br/>
           <strong>Sold by</strong>: <span class="article-seller"></span><br/>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-primary btn-success btn-buy" onclick="App.buyArticle(); return false;">Buy</button>
         </div>
       </div>
     </div>
@@ -111,7 +115,7 @@
   <div id="footer" class="container">
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="navbar-inner navbar-content-center text-center">
-        <p class="text-muted" credit><a href="https://nextflow.in.th">Nextflow</a> - &copy; 2017</p>
+        <p class="text-muted" credit><a href="http://chainskills.com">ChainSkills</a> - &copy; 2017 - <a href="https://twitter.com/sarbogast">Sebastien Arbogast</a> and <a href="https://twitter.com/eloudsa">Said Eloudrhiri</a></p>
       </div>
     </nav>
   </div>
